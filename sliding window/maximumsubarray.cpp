@@ -11,16 +11,17 @@ int main(){
     int maxIdx = 0;
     for(int i=0;i<k;i++){
         presum += arr[i];
-        cout<<presum<<" ";
+        //cout<<presum<<" ";
     }
     cout<<endl;
-    cout<<presum<<endl;
+    //cout<<presum<<endl;
     maxsum = presum;
     int i = 1  ;
     int j = k;
     while(j<n){
         int currentsum = presum + arr[j]-arr[i-1];
         if(maxsum<currentsum){
+            cout<<i<<" "<<j<<endl;
             maxsum = currentsum;
             maxIdx = i;
         }
@@ -28,6 +29,6 @@ int main(){
         j++;
         presum = currentsum;
     }
-    cout<<maxsum<<endl;
-    cout<<maxsum/k<<endl;
+    // cout<<maxsum<<endl;
+    // cout<<maxsum/k<<endl;
 }

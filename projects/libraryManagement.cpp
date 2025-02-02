@@ -6,7 +6,45 @@ using namespace std;
 void login();
 void registration();
 void forget();
+void menu();
+void Admin();
+void Student();
+void Student_Dashboard();
 int main(){
+    cout<<endl;
+    cout<<"\t\t\t|..............................................|\n\n";
+    cout<<"\t\t\t|             welcome                          |\n\n";
+    cout<<"\t\t\t|          1. Admin                            |\n\n";
+    cout<<"\t\t\t|          2. Student                          |\n\n";
+    cout<<"\t\t\t|..............................................|\n\n\n";
+    cout<<"\t\t\t       please enter your choice : ";
+    int choice;
+    cin>>choice;
+    cout<<endl;
+    switch(choice){
+        case 1:{
+            Admin();
+            break;
+        }
+        case 2 :{
+            Student();
+            break;
+        }
+        default :{
+            system("cls");
+            cout<<"\t\t\t Please select from the above given option "<<endl;
+        }
+    }
+}
+void Admin(){
+    system("cls");
+    menu();
+}
+void Student(){
+    system("cls");
+    menu();
+}
+void menu(){
     cout<<endl;
     cout<<"\t\t\t|..............................................|\n\n";
     cout<<"\t\t\t|        welcome to the menu page              |\n\n";
@@ -35,7 +73,7 @@ int main(){
         case 4 :{
             system("cls");
             cout<<"\t\t\t.................THANK YOU......................"<<endl;
-            main();
+            menu();
         }
         default :{
             system("cls");
@@ -62,11 +100,11 @@ void login(){
     input.close();
     if(count==1){
         cout<<username<<"\n\t\t\t Your LOGIN is successfull \n\t\t\t THANKS FOR LOGGING IN : \n\n";
-        main();
+        Student_Dashboard(username);
     }
     else {
         cout<<"\n\t\t\t LOGIN ERROR \n\t\t\t PLEASE CHECK YOUR USERNAME AND PASSWORD \n\n\n";
-        main();
+        menu();
     }
 }
 void registration(){
@@ -81,7 +119,7 @@ void registration(){
     f1<<username<<' '<<password<<endl;
     system("cls");
     cout<<"\t\t\t REGISTRATION IS SUCCESSFUL \n\n\n";
-    main();
+    menu();
 }
 void forget(){
     int option;
@@ -107,20 +145,33 @@ void forget(){
             if(count==1){
                 cout<<"\t\t\t your account is found : \n";
                 cout<<"\t\t\t your password is : \n"<<spass;
-                main();
+                menu();
             }
             else {
                 cout<<"\t\t\t sorry your account not found ";
-                main();
+                menu();
             }
             break;
         }
         case 2 :{
-            main();
+            menu();
         }
         default :{
             cout<<"\t\t\t wrong choice ! Please select correct option \n";
             forget();
         }
     }
+}
+
+void Student_Dashboard(string user){
+    system("cls");
+    cout<<"\t\t\t|..................................|\n\n";
+    cout<<"\t\t\t welcome ";
+    cout<<user;
+    cout<<endl;
+    cout<<"\t\t\t|   1. find book by name           |\n\n";
+    cout<<"\t\t\t|   2. find book by author name    |\n\n";
+    cout<<"\t\t\t|   3. find book by book_id        |\n\n";
+    cout<<"\t\t\t|   4. sign out                    |\n\n";
+    
 }
