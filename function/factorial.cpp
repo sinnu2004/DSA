@@ -13,24 +13,24 @@ class fact{
     void inp();
     void ncr();
     };
-void fact:: inp(){
-    cin>>n;
-}
-void fact:: init(){
-    factorial(n);
-}
-int fact:: factorial(int fact){
-    for(int i=2;i<=fact;i++){
-        g *= i;
+    void fact:: inp(){
+        cin>>n;
     }
-}
-void fact::dis(){
-    cout<<g;
-}
-int main(){
-    fact fa;
-    fa.inp();
-    fa.init();
-    fa.dis();
-    return 0;
-}
+    void fact:: init(){
+        factorial(n);
+    }
+    int fact:: factorial(int fact){
+        for(int i=2;i<=fact;i++){
+            g *= i;
+        }
+    }
+    void fact::dis(){
+        cout<<g;
+    }
+    int main(){
+        fact fa;
+        fa.inp();
+        fa.init();
+        fa.dis();
+        return 0;
+    }

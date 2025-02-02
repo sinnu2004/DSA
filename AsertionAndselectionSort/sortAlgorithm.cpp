@@ -7,8 +7,11 @@ int main(){
     int arr[] = {5,3,1,4,2};
     int n = 5;
    // for each loop
-    for(int ele : arr){
+    /*for(int ele : arr){
         cout<<ele<<" ";
+    }*/
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
     }
     cout<<endl;
     for(int i=0;i<n-1;i++){

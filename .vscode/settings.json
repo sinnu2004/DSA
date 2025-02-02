@@ -1,6 +1,24 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "unordered_set": "cpp"
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "MySQL91 ",
+            "database": "university",
+            "username": "saurabh",
+            "socketPath": "C:\\Program Files\\MySQL\\MySQL Server 9.1\\bin\\mysqld.exe",
+            "connectionTimeout": 30
+        }
+    ]
 }
