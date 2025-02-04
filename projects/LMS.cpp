@@ -69,6 +69,4 @@ int main(){
     add_student(student,"saurabh");   // adding new students
     st_request_history(book_id,123);  // students pull request for book allotment
     st_history(book_id);               // book request history
-
-    
 }
