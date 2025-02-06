@@ -45,16 +45,19 @@ int main(){
 }
 void login(){
     int count;
-    string username,password,id,pass;
+    string usertype,username,password,utype,id,pass;
     system("cls");
+    cout<<"\t\t\t enter the user type ";
+    cin>>usertype;
     cout<<"\t\t\t Please enter the username and password :"<<endl;
     cout<<"\t\t\t USERNAME ";
     cin>>username;
     cout<<"\t\t\t PASSWORD ";
     cin>>password;
+
     ifstream input("records.txt");
-    while(input>>id>>pass){
-        if(id==username && pass==password){
+    while(input>>utype>>id>>pass){
+        if(utype==usertype && id==username && pass==password){
             count = 1;
             system("cls");
         }
@@ -70,15 +73,17 @@ void login(){
     }
 }
 void registration(){
-    string username,password,rid,rpass;
+    string usertype,username,password,rtype,rid,rpass;
     system("cls");
+    cout<<"\t\t\t Enter the user type :";
+    cin>>usertype;
     cout<<"\t\t\t Enter the username : ";
     cin>>username;
     cout<<"\t\t\t Enter the password : ";
     cin>>password;
 
     ofstream f1("records.txt",ios::app);
-    f1<<username<<' '<<password<<endl;
+    f1<<usertype<<' '<<username<<' '<<password<<endl;
     system("cls");
     cout<<"\t\t\t REGISTRATION IS SUCCESSFUL \n\n\n";
     main();
@@ -94,11 +99,11 @@ void forget(){
     switch(option){
         case 1 :{
             int count = 0;
-            string suserid,sid,spass;
+            string utype,suserid,sid,spass;
             cout<<"\t\t\t enter the username which you remembered  :";
             cin>>suserid;
             ifstream f2("records.txt");
-            while(f2>>sid>>spass){
+            while(f2>>utype>>sid>>spass){
                 if(sid==suserid){
                     count = 1;
                 }
