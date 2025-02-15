@@ -20,6 +20,7 @@ int main(){
     q.push(40);
     q.push(50);
     display(q);
+    q.pop();
     cout<<q.front()<<endl;
     cout<<q.size()<<endl;
     cout<<q.back()<<endl;
