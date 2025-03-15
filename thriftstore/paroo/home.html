@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAROO - Homegrown Indian Brand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navbar with Category, State, Track Order & Cart-->
+    <nav class="flex justify-between items-center p-5 bg-gray-900 shadow-lg">
+        <h1 class="text-3xl font-bold">PAROO</h1>
+        <div class="flex space-x-6">
+            <!-- Category Dropdown -->
+            <div class="relative group">
+                <button class="hover:text-yellow-400">Category</button>
+                <div class="absolute hidden bg-white text-black mt-2 p-2 rounded-lg shadow-lg group-hover:block">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Baggy Jeans</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Formal Pant</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Jogger</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Jacket</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Shirts</a>
+                </div>
+            </div>
+            
+            <!-- State Dropdown -->
+            <div class="relative group">
+                <button class="hover:text-yellow-400">State</button>
+                <div class="absolute hidden bg-white text-black mt-2 p-2 rounded-lg shadow-lg group-hover:block max-h-60 overflow-y-auto">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Andhra Pradesh</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Arunachal Pradesh</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Assam</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Bihar</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Chhattisgarh</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Delhi</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Goa</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Gujarat</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Haryana</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Himachal Pradesh</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Jharkhand</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Karnataka</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Kerala</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Madhya Pradesh</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Maharashtra</a>
+                </div>
+            </div>
+            
+            <a href="#" class="hover:text-yellow-400">Track Order</a>
+            <a href="#" class="hover:text-yellow-400 flex items-center">
+                Cart <span class="ml-1">🛒</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- First Section: Landing Page -->
+    <section class="flex items-center justify-center min-h-screen">
+        <div class="relative w-full max-w-5xl mx-auto flex">
+            <!-- Background Image -->
+            <div class="relative w-2/3">
+                <img src="parooimages/hoodiimage.jpg" alt="Sweatshirts" class="rounded-lg w-full object-cover h-full">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="w-1/3 flex items-center justify-center p-6 text-left">
+                <div>
+                    <h1 class="text-5xl font-bold">50.00%<br>ON YOUR<br>1ST ORDER</h1>
+                    <p class="mt-4 text-lg font-semibold">The Most secure and trusted<br> 
+                        <span class="text-yellow-400">Indian brand</span>
+                    </p>
+                    <p class="mt-2 text-sm">We create and curate stunning designs on all sorts of equally stunning products :)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Section: Product Grid -->
+    <section class="py-10">
+        <div class="container">
+            <div class="item">
+                <img src="parooimages/jacket.jpg" alt="Jacket">
+                <div class="text-overlay">Stylish Jacket</div>
+            </div>
+            <div class="item">
+                <img src="parooimages/baggyjeans.jpg" alt="Straight Fit Jeans">
+                <div class="text-overlay">Straight Fit Jeans</div>
+            </div>
+            <div class="item">
+                <img src="parooimages/baggyjeans.jpg" alt="Baggy Jeans">
+                <div class="text-overlay">Baggy Jeans - Relaxed & Comfortable</div>
+            </div>
+            <div class="item">
+                <img src="parooimages/formal.jpg" alt="Formals">
+                <div class="text-overlay">Formals are Best</div>
+            </div>
+            <div class="item">
+                <img src="parooimages/formal.jpg" alt="Traditional">
+                <div class="text-overlay">Tradition Meets Style</div>
+            </div>
+            <div class="item">
+                <img src="parooimages/baggyjeans.jpg" alt="Sammar Style">
+                <div class="text-overlay">Sammar Fashion</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Brand Name -->
+    <footer class="footer">
+        <h1 class="brand-name">
+            <span>P</span><span>A</span><span>R</span><span>O</span><span>O</span>
+        </h1>
+        <p class="tagline">H O M E G R O W N &nbsp; I N D I A N &nbsp; B R A N D</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PAROO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            <li><a href="login.html" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="shop-container">
+        <h1>Shop Our Collection</h1>
+
+        <div class="product-grid">
+            <div class="product">
+                <img src="parooimages/baggyjeans.jpg" alt="Baggy Jeans">
+                <h2>Baggy Jeans</h2>
+                <p>₹1,499</p>
+                <button class="add-to-cart" data-product="Baggy Jeans" data-price="1499">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="parooimages/jacket.jpg" alt="Jacket">
+                <h2>Stylish Jacket</h2>
+                <p>₹2,499</p>
+                <button class="add-to-cart" data-product="Stylish Jacket" data-price="2499">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="parooimages/sneakers.jpg" alt="Sneakers">
+                <h2>Casual Sneakers</h2>
+                <p>₹1,999</p>
+                <button class="add-to-cart" data-product="Casual Sneakers" data-price="1999">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

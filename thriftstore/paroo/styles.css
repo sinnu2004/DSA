@@ -1,0 +1,422 @@
+/* ========================== */
+/* GLOBAL STYLES (APPLY TO ALL PAGES) */
+/* ========================== */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background-color: #1a1538;
+    color: rgb(176, 175, 177);
+}
+
+/* ========================== */
+/* NAVBAR STYLES (FOR ALL PAGES) */
+/* ========================== */
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns links to the right */
+    padding: 15px 30px;
+    background-color: rgb(32, 22, 53);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(222, 221, 231);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+
+/* ========================== */
+/* SHOP PAGE STYLES */
+/* ========================== */
+
+.shop-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #2a1f4d;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    color: white;
+    margin: 10px 0;
+}
+
+.product-item button {
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product-item button:hover {
+    background-color: darkred;
+}
+
+/* ========================== */
+/* CART PAGE STYLES */
+/* ========================== */
+
+.cart-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2a1f4d;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-item h3 {
+    color: white;
+    flex: 1;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.cart-item button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cart-item button:hover {
+    background-color: darkred;
+}
+
+.cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: darkgreen;
+}
+
+
+
+/* ========================== */
+/* HOME PAGE STYLES */
+/* ========================== */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Image */
+.large-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+    background: url('parooimages/cargo-pant.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+/* Baggy Jeans Image */
+.large-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Text Container */
+.text-container {
+    position: absolute;
+    top: 18%;
+    right: 30%;
+    text-align: right;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.trendy {
+    color: #a33b2d;
+}
+
+.designs {
+    color: #a33b2d;
+}
+
+/* Small Images */
+.small-images {
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.small-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: gray;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.small-img:hover {
+    transform: scale(1.1);
+}
+
+/* Product Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ========================== */
+/* FOOTER STYLES */
+/* ========================== */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(24, 18, 56);
+    font-size: 18px;
+}
+
+/* Brand Name with Custom Styling */
+.brand-name {
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 5px;
+}
+
+.brand-name span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Apply individual colors like your logo */
+.brand-name span:nth-child(1) { color: #a33b2d; } /* P */
+.brand-name span:nth-child(2) { color: #8c2d55; } /* A */
+.brand-name span:nth-child(3) { color: #72345e; } /* R */
+.brand-name span:nth-child(4) { color: #5e4a7b; } /* O */
+.brand-name span:nth-child(5) { color: #2e4691; } /* O */
+
+/* Tagline */
+.tagline {
+    font-size: 1rem;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+/* ========================== */
+/* LOGIN & SIGNUP PAGE STYLES */
+/* ========================== */
+
+/* Background */
+body.auth-page {
+    background-color: rgb(22, 15, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Login & Signup Form Container */
+.auth-container {
+    background: rgb(22, 15, 43);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Form Styling */
+.auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.auth-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+/* Button Styling */
+.auth-container button {
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-container button:hover {
+    background-color: darkred;
+}
+
+/* Hide Sign-Up Form Initially */
+.hidden {
+    display: none;
+}
+
+/* Sign Up Link */
+.signup-text {
+    margin-top: 10px;
+}
+
+.signup-text a {
+    color: #5e4a7b;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
